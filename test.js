@@ -3,7 +3,7 @@
 // Executable js file
 
 const assert = require('assert');
-const semi_semantic = new require('./semi-semantic.js')();
+const semi_semantic = require('./semi-semantic.js');
 
 // test 1
 var v1 = semi_semantic.parse("1.2.3");

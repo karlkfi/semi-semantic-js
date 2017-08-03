@@ -2,7 +2,7 @@
  * semi_semantic library
  * Allows parsing and sorting semi-semantic versions
  */
-module.exports = function() {
+var semi_semantic = function() {
   var semi_semantic = this;
 
   var pattern = "^(v?)([0-9]+(?:\\.[0-9]+)*)(-[0-9a-zA-Z.-]+)?(\\+[0-9a-zA-Z.-]+)?$";
@@ -133,3 +133,5 @@ module.exports = function() {
 
   return this;
 };
+
+module.exports = new semi_semantic();
