@@ -66,11 +66,24 @@ var semi_semantic = function() {
     // each segment is an array of components
     var min_length = Math.min(a.length, b.length);
     for (var i = 0; i < min_length; i++) {
-      if ( a[i] < b[i] ) {
-        return -1;
-      }
-      if ( a[i] > b[i] ) {
-        return 1;
+      var a_int = parseInt(a[i]);
+      var b_int = parseInt(b[i]);
+      if ( ''+a_int == a[i] && ''+b_int == b[i] ) {
+        // numeric: sort numerically
+        if ( a_int < b_int ) {
+          return -1;
+        }
+        if ( a_int > b_int ) {
+          return 1;
+        }
+      } else {
+        // non-numeric: sort alphanumerically
+        if ( a[i] < b[i] ) {
+          return -1;
+        }
+        if ( a[i] > b[i] ) {
+          return 1;
+        }
       }
     }
     // assume more components means newer

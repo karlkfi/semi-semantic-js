@@ -58,3 +58,13 @@ var sorted = [v3, v2, v1].sort(semi_semantic.sort);
 assert(sorted[0].toString() == "1.2.3-alpha");
 assert(sorted[1].toString() == "1.2.3-alpha+1234");
 assert(sorted[2].toString() == "1.2.3-alpha+2345");
+
+// test 7
+var v1 = semi_semantic.parse("1.2.10");
+var v2 = semi_semantic.parse("1.2.9");
+var v3 = semi_semantic.parse("1.2.8");
+var sorted = [v3, v2, v1].sort(semi_semantic.sort);
+assert(sorted[0].toString() == "1.2.8");
+assert(sorted[1].toString() == "1.2.9");
+assert(sorted[2].toString() == "1.2.10");
+
