@@ -1,0 +1,27 @@
+{
+  "name": "semi-semantic",
+  "version": "0.1.0",
+  "description": "More permissive semantic versioning. Port of semi_semantic gem to js.",
+  "main": "semi-semantic.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "mocha": "^3.5.0",
+    "shuffle-array": "^1.0.1"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/karlkfi/semi-semantic-js.git"
+  },
+  "author": "Karl Isenberg",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/karlkfi/semi-semantic-js/issues"
+  },
+  "homepage": "https://github.com/karlkfi/semi-semantic-js#readme"
+}
