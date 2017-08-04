@@ -58,3 +58,10 @@ console.log(sorted);
 npm install
 npm test
 ```
+
+## Build
+
+```
+npm install -g browserify
+browserify semi-semantic.js > semi-semantic.bundle.js
+```
